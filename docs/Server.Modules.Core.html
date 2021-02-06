@@ -1,90 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Blackrock Application Server Class: Core</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+    <!-- Adding meta -->
+    
+      
+        <meta name="author" content="Darren Smith" />
+      
+        <meta name="description" content="The Blackrock Application Server" />
+      
+    
 
-	<link type="text/css" rel="stylesheet" href="styles/site.lumen.css">
+    <!-- Adding external script-->
+    
+
+    <!-- Adding external style-->
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>Core</title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-light.css">
+    
+<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/>
+                <path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>
 
 </head>
-
 <body>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-<div class="navbar navbar-default navbar-fixed-top ">
-<div class="container">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html">Blackrock Application Server</a>
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-        </button>
-	</div>
-	<div class="navbar-collapse collapse" id="topNavigation">
-		<ul class="nav navbar-nav">
-			
-			<li class="dropdown">
-				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="Server.html">Server</a></li><li><a href="Server.Interfaces.html">Server.Interfaces</a></li><li><a href="Server.Modules.html">Server.Modules</a></li>
-				</ul>
-			</li>
-			
-			<li class="dropdown">
-				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="Server.Interfaces.Axon.html">Server.Interfaces.Axon</a></li><li><a href="Server.Interfaces.HTTP.html">Server.Interfaces.HTTP</a></li><li><a href="Server.Interfaces.HTTP.Client.html">Server.Interfaces.HTTP.Client</a></li><li><a href="Server.Interfaces.HTTP.Hook.html">Server.Interfaces.HTTP.Hook</a></li><li><a href="Server.Interfaces.NanoMSG.html">Server.Interfaces.NanoMSG</a></li><li><a href="Server.Interfaces.SSH.html">Server.Interfaces.SSH</a></li><li><a href="Server.Interfaces.WebSockets.html">Server.Interfaces.WebSockets</a></li><li><a href="Server.Interfaces.ZeroMQ.html">Server.Interfaces.ZeroMQ</a></li><li><a href="Server.Modules.CLI.html">Server.Modules.CLI</a></li><li><a href="Server.Modules.Configure.html">Server.Modules.Configure</a></li><li><a href="Server.Modules.Core.html">Server.Modules.Core</a></li><li><a href="Server.Modules.Core.Globals.html">Server.Modules.Core.Globals</a></li><li><a href="Server.Modules.Core.Interface.html">Server.Modules.Core.Interface</a></li><li><a href="Server.Modules.Core.Module.html">Server.Modules.Core.Module</a></li><li><a href="Server.Modules.Daemon.html">Server.Modules.Daemon</a></li><li><a href="Server.Modules.Data.html">Server.Modules.Data</a></li><li><a href="Server.Modules.ErrorHandler.html">Server.Modules.ErrorHandler</a></li><li><a href="Server.Modules.Farm.html">Server.Modules.Farm</a></li><li><a href="Server.Modules.Generator.html">Server.Modules.Generator</a></li><li><a href="Server.Modules.i18n.html">Server.Modules.i18n</a></li><li><a href="Server.Modules.Installer.html">Server.Modules.Installer</a></li><li><a href="Server.Modules.Jobs.html">Server.Modules.Jobs</a></li><li><a href="Server.Modules.Logger.html">Server.Modules.Logger</a></li><li><a href="Server.Modules.Router.html">Server.Modules.Router</a></li><li><a href="Server.Modules.Sandbox.html">Server.Modules.Sandbox</a></li><li><a href="Server.Modules.Services.html">Server.Modules.Services</a></li><li><a href="Server.Modules.Universe.html">Server.Modules.Universe</a></li><li><a href="Server.Modules.Utilities.html">Server.Modules.Utilities</a></li>
-				</ul>
-			</li>
-			
-			<li class="dropdown">
-				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="Server.Modules.ErrorHandler.html#event:errorthrown">Server.Modules.ErrorHandler#event:errorthrown</a></li><li><a href="Server.Modules.ErrorHandler.html#~event:event:errorhandled">Server.Modules.ErrorHandler~event:errorhandled</a></li>
-				</ul>
-			</li>
-			
-			<li class="dropdown">
-				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="tutorial-advanced-routing.html">Advanced Routing</a></li><li><a href="tutorial-getting-started.html">Getting Started</a></li><li><a href="tutorial-server-configuration.html">Server Configuration</a></li><li><a href="tutorial-service-filesystem-structure.html">Service Filesystem Structure</a></li>
-				</ul>
-			</li>
-			
-		</ul>
-        
-	</div>
+<label for="nav-trigger" class="overlay"></label>
 
-</div>
-</div>
+<nav>
+    <h2><a href="index.html"><div class="text">Blackrock Application Server</div></a></h2><div class="search-box"><input type="text" placeholder="Search..." id="search-box" /><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-list-div"><ul><li><a href='#' class='' id='' target=''> </a></li><li><a href='#' class='' id='' target=''> </a></li><li><a href='#' class='' id='' target=''> </a></li><li><a href='#' class='' id='' target=''> </a></li><li><a href='#' class='' id='' target=''> </a></li><li><a href='https://blackrock.industryswarm.com' class='' id='' target='_blank'>Blackrock Homepage</a></li><li><a href='https://github.com/Industryswarm/isnode-blackrock' class='' id='' target='_blank'>Blackrock GitHub Repository</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-advanced-routing.html">Advanced Routing</a></li><li><a href="tutorial-app-filesystem-structure.html">App Filesystem Structure</a></li><li><a href="tutorial-getting-started.html">Getting Started</a></li><li><a href="tutorial-server-configuration.html">Server Configuration</a></li></ul><h3>Classes</h3><ul><li><a href="Server.Interfaces.Axon.html">Axon</a></li><li><a href="Server.Interfaces.HTTP.html">HTTP</a></li><li><a href="Server.Interfaces.HTTP.Client.html">Client</a><ul class='methods'><li data-type='method'><a href="Server.Interfaces.HTTP.Client.html#.delete">delete</a></li><li data-type='method'><a href="Server.Interfaces.HTTP.Client.html#.get">get</a></li><li data-type='method'><a href="Server.Interfaces.HTTP.Client.html#.post">post</a></li><li data-type='method'><a href="Server.Interfaces.HTTP.Client.html#.put">put</a></li><li data-type='method'><a href="Server.Interfaces.HTTP.Client.html#.request">request</a></li></ul></li><li><a href="Server.Interfaces.HTTP.Hook.html">Hook</a><ul class='methods'><li data-type='method'><a href="Server.Interfaces.HTTP.Hook.html#.add">add</a></li><li data-type='method'><a href="Server.Interfaces.HTTP.Hook.html#.remove">remove</a></li></ul></li><li><a href="Server.Interfaces.NanoMSG.html">NanoMSG</a></li><li><a href="Server.Interfaces.SSH.html">SSH</a></li><li><a href="Server.Interfaces.WebSockets.html">WebSockets</a></li><li><a href="Server.Interfaces.ZeroMQ.html">ZeroMQ</a></li><li><a href="Server.Modules.AppEngine.html">AppEngine</a><ul class='methods'><li data-type='method'><a href="Server.Modules.AppEngine.html#.appStats">appStats</a></li><li data-type='method'><a href="Server.Modules.AppEngine.html#.list">list</a></li><li data-type='method'><a href="Server.Modules.AppEngine.html#.load">load</a></li><li data-type='method'><a href="Server.Modules.AppEngine.html#.reloadApp">reloadApp</a></li><li data-type='method'><a href="Server.Modules.AppEngine.html#.search">search</a></li><li data-type='method'><a href="Server.Modules.AppEngine.html#.unloadApp">unloadApp</a></li></ul></li><li><a href="Server.Modules.AppEngine.app.html">app</a><ul class='methods'><li data-type='method'><a href="Server.Modules.AppEngine.app.html#.cfg">cfg</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.html#.loadController">loadController</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.html#.routes">routes</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.html#.unloadController">unloadController</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.html#.use">use</a></li></ul></li><li><a href="Server.Modules.AppEngine.app.models.html">models</a><ul class='methods'><li data-type='method'><a href="Server.Modules.AppEngine.app.models.html#.add">add</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.models.html#.get">get</a></li></ul></li><li><a href="Server.Modules.AppEngine.app.url.html">url</a><ul class='methods'><li data-type='method'><a href="Server.Modules.AppEngine.app.url.html#.get">get</a></li></ul></li><li><a href="Server.Modules.AppEngine.app.vars.html">vars</a><ul class='methods'><li data-type='method'><a href="Server.Modules.AppEngine.app.vars.html#.get">get</a></li><li data-type='method'><a href="Server.Modules.AppEngine.app.vars.html#.set">set</a></li></ul></li><li><a href="Server.Modules.CLI.html">CLI</a><ul class='methods'><li data-type='method'><a href="Server.Modules.CLI.html#.register">register</a></li></ul></li><li><a href="Server.Modules.Configure.html">Configure</a></li><li><a href="Server.Modules.Core.html">Core</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Core.html#.cfg">cfg</a></li><li data-type='method'><a href="Server.Modules.Core.html#.fetchBasePath">fetchBasePath</a></li><li data-type='method'><a href="Server.Modules.Core.html#.getCoreProxy">getCoreProxy</a></li><li data-type='method'><a href="Server.Modules.Core.html#.init">init</a></li><li data-type='method'><a href="Server.Modules.Core.html#.module">module</a></li><li data-type='method'><a href="Server.Modules.Core.html#.pkg">pkg</a></li><li data-type='method'><a href="Server.Modules.Core.html#.ready">ready</a></li><li data-type='method'><a href="Server.Modules.Core.html#.shutdown">shutdown</a></li><li data-type='method'><a href="Server.Modules.Core.html#.void">void</a></li></ul></li><li><a href="Server.Modules.Core.Base.html">Base</a></li><li><a href="Server.Modules.Core.CoreProxy.html">CoreProxy</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Core.CoreProxy.html#.cfg">cfg</a></li><li data-type='method'><a href="Server.Modules.Core.CoreProxy.html#.fetchBasePath">fetchBasePath</a></li><li data-type='method'><a href="Server.Modules.Core.CoreProxy.html#.module">module</a></li><li data-type='method'><a href="Server.Modules.Core.CoreProxy.html#.pkg">pkg</a></li><li data-type='method'><a href="Server.Modules.Core.CoreProxy.html#.shutdown">shutdown</a></li></ul></li><li><a href="Server.Modules.Core.Interface.html">Interface</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Core.Interface.html#.get">get</a></li><li data-type='method'><a href="Server.Modules.Core.Interface.html#.list">list</a></li></ul></li><li><a href="Server.Modules.Core.Module.html">Module</a></li><li><a href="Server.Modules.Daemon.html">Daemon</a></li><li><a href="Server.Modules.DataAccess.html">DataAccess</a></li><li><a href="Server.Modules.ErrorHandler.html">ErrorHandler</a></li><li><a href="Server.Modules.Farm.html">Farm</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Farm.html#.get">get</a></li><li data-type='method'><a href="Server.Modules.Farm.html#.isJobServer">isJobServer</a></li><li data-type='method'><a href="Server.Modules.Farm.html#.set">set</a></li><li data-type='method'><a href="Server.Modules.Farm.html#.updateListener">updateListener</a></li></ul></li><li><a href="Server.Modules.Generator.html">Generator</a></li><li><a href="Server.Modules.i18n.html">i18n</a><ul class='methods'><li data-type='method'><a href="Server.Modules.i18n.html#.addResource">addResource</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.addResourceBundle">addResourceBundle</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.addResources">addResources</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.changeLanguage">changeLanguage</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.cloneInstance">cloneInstance</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.createAppInstances">createAppInstances</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.createInstance">createInstance</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.dir">dir</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.exists">exists</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.format">format</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.getDataByLanguage">getDataByLanguage</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.getFixedT">getFixedT</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.getResource">getResource</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.getResourceBundle">getResourceBundle</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.hasResourceBundle">hasResourceBundle</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.init">init</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.loadLanguages">loadLanguages</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.loadNamespaces">loadNamespaces</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.off">off</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.on">on</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.reloadResources">reloadResources</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.removeResourceBundle">removeResourceBundle</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.setDefaultNamespace">setDefaultNamespace</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.t">t</a></li><li data-type='method'><a href="Server.Modules.i18n.html#.use">use</a></li></ul></li><li><a href="Server.Modules.Installer.html">Installer</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Installer.html#.details">details</a></li><li data-type='method'><a href="Server.Modules.Installer.html#.download">download</a></li><li data-type='method'><a href="Server.Modules.Installer.html#.install">install</a></li><li data-type='method'><a href="Server.Modules.Installer.html#.list">list</a></li><li data-type='method'><a href="Server.Modules.Installer.html#.remove">remove</a></li><li data-type='method'><a href="Server.Modules.Installer.html#.switchRegistry">switchRegistry</a></li></ul></li><li><a href="Server.Modules.Jobs.html">Jobs</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Jobs.html#.add">add</a></li><li data-type='method'><a href="Server.Modules.Jobs.html#.remove">remove</a></li></ul></li><li><a href="Server.Modules.Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Logger.html#.getLatestHeartbeat">getLatestHeartbeat</a></li><li data-type='method'><a href="Server.Modules.Logger.html#.log">log</a></li></ul></li><li><a href="Server.Modules.Router.html">Router</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Router.html#.count">count</a></li><li data-type='method'><a href="Server.Modules.Router.html#.get">get</a></li><li data-type='method'><a href="Server.Modules.Router.html#.list">list</a></li><li data-type='method'><a href="Server.Modules.Router.html#.new">new</a></li></ul></li><li><a href="Server.Modules.Router.router.html">router</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Router.router.html#.incoming">incoming</a></li><li data-type='method'><a href="Server.Modules.Router.router.html#.route">route</a></li></ul></li><li><a href="Server.Modules.Sandbox.html">Sandbox</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Sandbox.html#.execute">execute</a></li></ul></li><li><a href="Server.Modules.Utilities.html">Utilities</a><ul class='methods'><li data-type='method'><a href="Server.Modules.Utilities.html#.cloneObject">cloneObject</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.decrypt">decrypt</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.encrypt">encrypt</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getCpuLoad">getCpuLoad</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getCurrentDateInISO">getCurrentDateInISO</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getEndTime">getEndTime</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getMemoryUse">getMemoryUse</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getObjectMemoryUsage">getObjectMemoryUsage</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.getStartTime">getStartTime</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.isJSON">isJSON</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.isNil">isNil</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.isNull">isNull</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.isUndefined">isUndefined</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.loadModule">loadModule</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.objectLength">objectLength</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.parseCsv">parseCsv</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.path">path</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.prop">prop</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.prop">prop</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.randomString">randomString</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.uuid4">uuid4</a></li><li data-type='method'><a href="Server.Modules.Utilities.html#.validateString">validateString</a></li></ul></li></ul><h3>Events</h3><ul><li><a href="Server.Modules.ErrorHandler.html#event:errorthrown">errorthrown</a></li><li><a href="Server.Modules.ErrorHandler.html#~event:event:errorhandled">event:errorhandled</a></li></ul><h3>Namespaces</h3><ul><li><a href="Server.html">Server</a></li><li><a href="Server.Interfaces.html">Interfaces</a></li><li><a href="Server.Modules.html">Modules</a></li></ul></div>
+</nav>
+
+<div id="main">
+    
+    <h1 id='page-title' class="page-title">Core</h1>
+    
+
+    
 
 
-<div class="container" id="toc-content">
-<div class="row">
 
-	
-	<div class="col-md-8">
-	
-		<div id="main">
-			
 
-	<h1 class="page-title">Class: Core</h1>
 <section>
+
 
 <header>
     
+        
         <h2>
+        
             <span class="ancestors"><a href="Server.html">Server</a><a href="Server.Modules.html">.Modules</a>.</span>
         
         Core
+        
         </h2>
+        
         
     
 </header>
@@ -94,40 +100,39 @@
     <div class="container-overview">
     
         
-<hr>
-<dt>
-    <h4 class="name" id="Core"><span class="type-signature"></span>new Core()</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id="Core">
+        <a href="#Core">#</a>
+        <span class="type-signature"></span>new Core<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        This is the Core Module of the Blackrock Application Server.
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This is the Core Module of the Blackrock Application Server.
 It is responsible for loading all remaining modules and interfaces within Blackrock.
 This module exports the core object (an instantiated version of the Core class
 contained within) to the parent Server namespace. You do not need to instantiate this
-module's class (by calling the constructor), as this is done automatically for you.
+module's class (by calling the constructor), as this is done automatically for you.</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
 
-    
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -137,87 +142,106 @@ module's class (by calling the constructor), as this is done automatically for y
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>Darren Smith</li>
-			</ul>
-	</dd>
-	
+    
 
-	
-	<dt class="tag-copyright method-doc-label method-doc-details-label">Copyright:</dt>
-	<dd class="tag-copyright">
-		<ul class="dummy">
-			<li>Copyright (c) 2020 Darren Smith</li>
-		</ul>
-	</dd>
-	
+    
 
-	
-	<dt class="tag-license method-doc-label method-doc-details-label">License:</dt>
-	<dd class="tag-license">
-		<ul class="dummy">
-			<li>Licensed under the LGPL license.</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-author">Author:</dt>
+            <dd class="tag-author">
+                <ul>
+                    <li>Darren Smith</li>
+                </ul>
+            </dd>
+        </div>
+    
 
+    
+        <div class="details-item-container">
+            <dt class="tag-copyright">Copyright:</dt>
+            <dd class="tag-copyright"><ul class="dummy"><li>Copyright (c) 2021 Darren Smith</li></ul></dd>
+        </div>
+    
 
+    
+        <div class="details-item-container">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license"><ul class="dummy"><li>Licensed under the LGPL license.</li></ul></dd>
+        </div>
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-119">line 119</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line166">line 166</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-        <h5>Example</h5>
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
         
-    <pre class="sunlight-highlight-javascript">// Get Core Object:
-require(&#x27;is-blackrock&#x27;).init()
+    <pre class="prettyprint"><code>// Get Core Object (Calling Blackrock As A Dependency):
+require('is-blackrock').init()
   .then(function(core) {
-    console.log(core.status);
-    // Output: &#x27;Active&#x27; (if server has finished initialising)
-  });</pre>
+    const log = core.module('logger).log;
+    log('debug', 'My App - The Status of Core is ' + core.status, {}, 'CORE_STATUS');
+    // Output: 'The Status of Core is Active' (if server has finished initialising)
+  });</code></pre>
 
+    <pre class="prettyprint"><code>// Get Core Object (From App Controller):
+const ctrl = function() {};
+ctrl.get = function(req, res) {
+  const log = req.core.module('logger).log;
+  log('debug', 'My App - The Status of Core is ' + core.status, {}, 'CORE_STATUS');
+  // Output: 'The Status of Core is Active' (if server has finished initialising)
+}</code></pre>
 
-    
-</dd>
+    </div>
+
 
     
     </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Server.Modules.Core.Base.html">Server.Modules.Core.Base</a></li>
+    </ul>
+
 
     
 
@@ -227,7 +251,10 @@ require(&#x27;is-blackrock&#x27;).init()
         <h3 class="subsection-title">Classes</h3>
 
         <dl>
-            <dt><a href="Server.Modules.Core.Globals.html">Globals</a></dt>
+            <dt><a href="Server.Modules.Core.Base.html">Base</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Server.Modules.Core.CoreProxy.html">CoreProxy</a></dt>
             <dd></dd>
         
             <dt><a href="Server.Modules.Core.Interface.html">Interface</a></dt>
@@ -238,50 +265,112 @@ require(&#x27;is-blackrock&#x27;).init()
         </dl>
     
 
-    
+     
 
     
 
     
         <h3 class="subsection-title">Members</h3>
 
-        <dl>
+        
             
-<hr>
-<dt class="name" id="core">
-    <h4 id="core"><span class="type-signature"></span>core<span class="type-signature"> :<a href="Server.Modules.Core.html">Server.Modules.Core</a></span></h4>
+<h4 class="name" id=".globals">
+    <a href="#.globals">#</a>
+    <span class="type-signature">(static) </span>globals<span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This object contains methods to get and set methods that are globally accessible across the
+Application Server. It does NOT need to be instantiated and can/should not be called directly.
+You can read more about the get method here - Server.Modules.Core#globals.get.
+And the set method here - Server.Modules.Core#globals.set</p>
+</div>
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties</h5>
 
     
-</dt>
-<dd>
-    
-    <div class="description">
-        Core Module Instance
-    </div>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
+        <tr>
+            
+                <td class="name"><code>globals.set</code></td>
+            
+
+            <td class="type">
+            
                 
-<span class="param-type"><a href="Server.Modules.Core.html">Server.Modules.Core</a></span>
+<span class="param-type">function</span>
 
 
+            
+            </td>
 
-            </li>
-        </ul>
+            
+
+            
+
+            <td class="description last"><p>Sets global variable value</p></td>
+        </tr>
+
     
 
+        <tr>
+            
+                <td class="name"><code>globals.get</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Gets global variable value</p></td>
+        </tr>
+
     
+    </tbody>
+</table>
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -291,79 +380,145 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-1077">line 1077</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line625">line 625</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
-</dd>
 
-        </dl>
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>// Set a global variable:
+core.globals.set('test', 'value');     // Returns: true</code></pre>
+
+    <pre class="prettyprint"><code>// Get a global variable:
+core.globals.get('test');              // Returns: 'value'</code></pre>
+
+
+
+        
     
 
     
         <h3 class="subsection-title">Methods</h3>
 
-        <dl>
+        
             
-<hr>
-<dt>
-    <h4 class="name" id=".cfg"><span class="type-signature">&lt;static> </span>cfg()</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".cfg">
+        <a href="#.cfg">#</a>
+        <span class="type-signature">(static) </span>cfg<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        Return Configuration
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method can be accessed when calling Blackrock As A Dependency, and also from within the app
+controllers (if enabled in config: config['app-engine'].allow.cfg = true). It returns the application server's
+current configuration state. This state, of course, is originally read from the config file on the filesystem
+when the application server starts up. And can also be passed through or modified via the Init Object
+(the first parameter that you pass to Blackrock's Init Method.</p>
     </div>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties</h5>
 
     
 
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
-    
-    
+        <tr>
+            
+                <td class="name"><code>cfg.update</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Updates the Configuration</p></td>
+        </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -373,59 +528,61 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-403">line 403</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line458">line 458</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    config - The Config Object. See <a href="tutorial-server-configuration.html">Server Configuration</a>
+    <p>config - The Config Object. See <a href="tutorial-server-configuration.html">Server Configuration</a></p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -434,54 +591,70 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">object</span>
 
 
-
     </dd>
 </dl>
 
+    </div>
 
-        
 
-    
-        <h5>Example</h5>
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
         
-    <pre class="sunlight-highlight-javascript">// Return Application Server Configuration Object:
-require(&#x27;is-blackrock&#x27;).init()
+    <pre class="prettyprint"><code>// Return Application Server Configuration Object (Calling Blackrock As A Dependency):
+const initObject = { config: amendedConfigData}
+require('is-blackrock').init(initObject)
   .then(function(core) {
+    const log = req.core.module('logger').log;
     const config = core.cfg();
-    console.log(config.core.banner);
-    // Output: &#x27;Blackrock Application Server (Default)&#x27;
-  });</pre>
+    log('debug', 'My App > Message - ' + config.core.banner, {}, 'MY_APP_SENDING_CONFIG_BANNER');
+    // Output: 'Blackrock Application Server (Default)' (In Console)
+  });</code></pre>
 
+    <pre class="prettyprint"><code>// Updates the live configuration of the application server:
+require('is-blackrock').init()
+  .then(function(core) {
+    const result = core.cfg.update({'test': 'value'});
+    if(result) console.log('Updated');
+    else console.log('Update Failed');
+  });</code></pre>
 
-    
-</dd>
+    </div>
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".fetchBasePath"><span class="type-signature">&lt;static> </span>fetchBasePath(type)</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".fetchBasePath">
+        <a href="#.fetchBasePath">#</a>
+        <span class="type-signature">(static) </span>fetchBasePath<span class="signature">(type)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        Fetch Base Path
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method can be used when accessing core where Blackrock is a dependency of your own project, and can also
+be used from within a app controller (where enabled in config). It fetches whichever base path type you
+specify by name when calling it. Options include - 'apps', 'module', 'config', 'cache', 'root'.</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
-        <h5>Parameters:</h5>
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
         
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -512,7 +685,6 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -520,24 +692,20 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">The Base Path Type</td>
+            <td class="description last"><p>The Base Path Type</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
+    </div>
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -547,59 +715,61 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-478">line 478</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line563">line 563</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    basePath - The Requested Base Path
+    <p>basePath - The Requested Base Path</p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -608,45 +778,1148 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">string</span>
 
 
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
+        
+    <pre class="prettyprint"><code>// Return Application Server Configuration Object (Calling Blackrock As A Dependency):
+require('is-blackrock').init()
+  .then(function(core) {
+    const log = core.module('logger).log;
+    const appBasePath = core.fetchBasePath('apps');
+    log('debug', 'My App > App Base Path Is ' + appBasePath, {}, 'MY_APP_BASE_PATH');
+    // Output: 'App Base Path Is /home/alice/my-local-swarm/apps' (In Console)
+  });</code></pre>
+
+    <pre class="prettyprint"><code>// Return Application Server Configuration Object (From App Controller. In - Say, a Stand-Alone Setup):
+const ctrl = function() {};
+ctrl.get = function(req, res) {
+  const log = req.core.module('logger).log;
+  const appBasePath = req.core.fetchBasePath('apps');
+  log('debug', 'My App > App Base Path Is ' + appBasePath, {}, 'MY_APP_BASE_PATH');
+  // Output: 'App Base Path Is /opt/blackrock/apps' (In Console, Stand-Alone Application Server Mode)
+}</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getCoreProxy">
+        <a href="#.getCoreProxy">#</a>
+        <span class="type-signature">(static) </span>getCoreProxy<span class="signature">(myConfig, app)</span><span class="type-signature"> &rarr; {<a href="Server.Modules.Core.CoreProxy.html">Server.Modules.Core.CoreProxy</a>}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method provides an instance of the CoreProxy Class that acts as a proxy between the Core Module Singleton
+and app code, to ensure that the app only has limited access to the methods contained within the Core Module
+This includes limited access to modules that are accessible via the child module() method and apps.
+The method names defines within the myConfig[module] array can take one of three forms - a plain method name
+(eg; &quot;log&quot;), a nested method name (eg; &quot;csv.parse&quot;) or a method name with a constraint placed on the input
+parameter (eg; &quot;app(appName)&quot;).</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>myConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Configuration Object</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>cfg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Make the cfg() method available? True | False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pkg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Make the pkg() method available? True | False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fetchBasePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Make the fetchBasePath() method available? True | False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shutdown</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Make the shutdown() method available? True | False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>globals</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Make the Core Globals Singleton available? True | False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modules</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An object of modules to make available</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>cli</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the CLI Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>daemon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Daemon Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorhandler</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the ErrorHandler Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>farm</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Farm Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>generator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Generator Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>i18n</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the i18n Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>installer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Installer Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>jobs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Jobs Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>logger</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Logger Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>router</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Router Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sandbox</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Sandbox Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>utilities</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Utilities Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>validate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Validate Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>http</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the HTTP Interface</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>websockets</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the WebSockets Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>axon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the Axon Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>nanomsg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the NanoMSG Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ssh</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the SSH Module</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>zeromq</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array of method names to enable for the ZeroMQ Module</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>app</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Server.Modules.AppEngine.App</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>App Instance</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line879">line 879</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>coreProxyInstance - Core Proxy Instance</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Server.Modules.Core.CoreProxy.html">Server.Modules.Core.CoreProxy</a></span>
+
 
     </dd>
 </dl>
 
+    </div>
 
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
         
+    <pre class="prettyprint"><code>const config = core.cfg();
+const coreProxyInstance = core.getCoreProxy(config['app-engine'].allow);</code></pre>
 
-    
-</dd>
+    </div>
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".init"><span class="type-signature">&lt;static> </span>init(initialConfig, callbackFn)</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".init">
+        <a href="#.init">#</a>
+        <span class="type-signature">(static) </span>init<span class="signature">(initialConfig, callbackFn)</span><span class="type-signature"> &rarr; {<a href="Server.Modules.Core.html">Server.Modules.Core</a>}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        This method initialises the application server. It is called automatically when you are running the server
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method initialises the application server. It is called automatically when you are running the server
 in stand-alone mode. If you are running the server as a dependency for another application, then you must
 call this method on the object returned by require in order to start the server. The server will remain in
-an inactive state up until you call this method.
+an inactive state up until you call this method.</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
-        <h5>Parameters:</h5>
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
         
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -677,7 +1950,6 @@ an inactive state up until you call this method.
 <span class="param-type">object</span>
 
 
-
             
             </td>
 
@@ -685,11 +1957,11 @@ an inactive state up until you call this method.
 
             
 
-            <td class="description last">Initial Configuration Data
-                <h6 class="method-params-label method-subparams-label">Properties</h6>
+            <td class="description last"><p>Initial Configuration Data</p>
+                <h6>Properties</h6>
                 
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -707,6 +1979,52 @@ an inactive state up until you call this method.
     </thead>
 
     <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>silent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>True disables console logging (when embedding in your own app), Else False</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>True enables test mode, Else False</p></td>
+        </tr>
+
     
 
         <tr>
@@ -720,7 +2038,6 @@ an inactive state up until you call this method.
 <span class="param-type">object</span>
 
 
-
             
             </td>
 
@@ -728,7 +2045,7 @@ an inactive state up until you call this method.
 
             
 
-            <td class="description last">Configuration Block. See <a href="tutorial-server-configuration.html">Server Configuration</a></td>
+            <td class="description last"><p>Configuration Block. See <a href="tutorial-server-configuration.html">Server Configuration</a></p></td>
         </tr>
 
     
@@ -751,7 +2068,6 @@ an inactive state up until you call this method.
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -759,24 +2075,20 @@ an inactive state up until you call this method.
 
             
 
-            <td class="description last">The Callback Function</td>
+            <td class="description last"><p>The Callback Function</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
+    </div>
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -786,59 +2098,61 @@ an inactive state up until you call this method.
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-184">line 184</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line239">line 239</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    core - The Core Module
+    <p>core - The Core Module</p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -847,53 +2161,61 @@ an inactive state up until you call this method.
 <span class="param-type"><a href="Server.Modules.Core.html">Server.Modules.Core</a></span>
 
 
-
     </dd>
 </dl>
 
+    </div>
 
-        
 
-    
-        <h5>Example</h5>
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
         
-    <pre class="sunlight-highlight-javascript">// Initialise the Application Server:
-require(&#x27;is-blackrock&#x27;).init()
+    <pre class="prettyprint"><code>// Initialise the Application Server (Not Available to App Controllers):
+require('is-blackrock').init()
   .then(function(core) {
     console.log(core.status);
-    // Output: &#x27;Active&#x27; (if server has finished initialising)
-  });</pre>
+    // Output: 'Active' (if server has finished initialising)
+  });</code></pre>
 
+    </div>
 
-    
-</dd>
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".isLoaded"><span class="type-signature">&lt;static> </span>isLoaded(module [, callbackFn])</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".module">
+        <a href="#.module">#</a>
+        <span class="type-signature">(static) </span>module<span class="signature">(name, type<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Server.Modules.Core.Module.html">Server.Modules.Core.Module</a>}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        Is Loaded?
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method (when provided with a module name), returns the singleton for that module to the caller.
+Module singletons are instantiated at server startup - with this being configurable within the server config.
+Note: To use this method from an app controller, you must enable the modules you will have access to
+within the server config, along with the method names within.
+Eg; config['app-engine'].allow.modules[moduleName] = methodName   (See <a href="tutorial-server-configuration.html">Server Configuration</a>)</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
-        <h5>Parameters:</h5>
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
         
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -903,451 +2225,7 @@ require(&#x27;is-blackrock&#x27;).init()
         <th>Type</th>
 
         
-        <th>Argument</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>module</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Module Name</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callbackFn</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Callback Function</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-545">line 545</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    promise - Promise to Return
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".loadModule"><span class="type-signature">&lt;static> </span>loadModule(type, moduleName [, cb])</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Load Module
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Argument</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Module Type</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>moduleName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Module Name</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>cb</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Callback Function</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-594">line 594</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    output - Method Response
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">object</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".module"><span class="type-signature">&lt;static> </span>module(name [, type])</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get Module Instance
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Argument</th>
+        <th>Attributes</th>
         
 
         
@@ -1370,7 +2248,6 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -1386,7 +2263,7 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">Module Name</td>
+            <td class="description last"><p>Module Name</p></td>
         </tr>
 
     
@@ -1400,7 +2277,6 @@ require(&#x27;is-blackrock&#x27;).init()
             
                 
 <span class="param-type">string</span>
-
 
 
             
@@ -1420,142 +2296,24 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">Module Type</td>
+            <td class="description last"><p>Module Type (Leave blank for standard module, or enter 'interface' for an interface</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-656">line 656</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    module - The Requested Module
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="Server.Modules.Core.Module.html">Server.Modules.Core.Module</a></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">// Return a Module Instance
-require(&#x27;is-blackrock&#x27;).init()
-  .then(function(core) {
-    const logger = core.module(&#x27;logger&#x27;);
-    logger.log(&#x27;debug&#x27;, &#x27;This is a test message&#x27;);
-    // Output: &#x27;This is a test message&#x27; will appear in the logs (incl. console if enabled)
-  });</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".moduleCount"><span class="type-signature">&lt;static> </span>moduleCount(type)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get Module Count
     </div>
-    
+
+
+
+
+
+    <h5 class="subsection-title">Properties</h5>
 
     
 
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
+<table class="props">
     <thead>
     <tr>
         
@@ -1577,14 +2335,13 @@ require(&#x27;is-blackrock&#x27;).init()
 
         <tr>
             
-                <td class="name"><code>type</code></td>
+                <td class="name"><code>module.count</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
-
+<span class="param-type">function</span>
 
 
             
@@ -1594,24 +2351,86 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">Module Type</td>
+            <td class="description last"><p>Returns number of loaded modules and/or interfaces</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>module.load</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Loads a module and instantiates it's Singleton</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>module.isLoaded</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Waits until module loads and then fulfills a Promise</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>module.closeAll</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Closes all active modules</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1621,121 +2440,149 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-683">line 683</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line677">line 677</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    count - The Module Count
+    <p>module - The Requested Module</p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
     <dd>
         
-<span class="param-type">number</span>
-
+<span class="param-type"><a href="Server.Modules.Core.Module.html">Server.Modules.Core.Module</a></span>
 
 
     </dd>
 </dl>
 
+    </div>
 
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
         
+    <pre class="prettyprint"><code>// module() - Return the Module Singleton:
+const logger = core.module('logger');
+logger.log('debug', 'This is a test message');
+// Output: 'This is a test message' will appear in the logs (incl. console if enabled)</code></pre>
 
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">// Return a Count of Loaded Modules:
-require(&#x27;is-blackrock&#x27;).init()
-  .then(function(core) {
-    const moduleCount = core.moduleCount(&#x27;modules&#x27;);
-    console.log(moduleCount);
-    // Output: 10 (or however many modules have been loaded)
-  });</pre>
+    <pre class="prettyprint"><code>// module.count() - Return a Count of Loaded Modules:
+const moduleCount = core.module.count('modules');
+log('debug', 'My App > How many modules are loaded? It's - ' + moduleCount, {}, 'MY_APP_COUNT_DEM_MODS');
+// Output: 10 (or however many modules have been loaded)</code></pre>
 
+    <pre class="prettyprint"><code>// module.load() - Loads a module:
+core.module.load('module', 'logger', function(err, loggerModule){
+    loggerModule.log('debug', 'My App > Hello!', {}, 'LOADED_MOD');
+    // Output: "My App > Hello!"
+});</code></pre>
 
-    
-</dd>
+    <pre class="prettyprint"><code>// module.isLoaded() - Waits until module is loaded and then fulfills a Promise:
+ core.module.isLoaded('cli').then(function IsLoadedPromiseThen(cliMod) {
+   cliMod.register([
+     {'cmd': 'drop-acid', 'params': 'mindset=happy', 'info': 'Takes you on a wild trip', 'fn': function (params) {
+       core.emit('OH_SHIT_HE_DID_IT', {'command': 'start-trip', 'params': params});
+     }},
+   ]);
+ }).catch(function IsLoadedPromiseFail(err) {
+   log('error',
+       'My App > He Failed. He's now in the psych ward',
+       err, 'DROP_ACID_FAIL');
+ });</code></pre>
+
+    <pre class="prettyprint"><code>// module.closeAll() - Scope is that it's being executed from within Core Module Internals
+core.module.closeAll();
+// Output in Logs: '20201201 00:00:00 (shutdown) All Modules Have Been Terminated'</code></pre>
+
+    </div>
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".pkg"><span class="type-signature">&lt;static> </span>pkg()</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".pkg">
+        <a href="#.pkg">#</a>
+        <span class="type-signature">(static) </span>pkg<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        Get Package JSON File
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method returns a Javascript object that contains the parsed content of the package.json file. If the
+server is running in stand-alone mode, then this will be the package.json file of the actual is-blackrock
+module. Otherwise, it will be the package.json file of the host application that is accessing Blackrock
+as a dependency.</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
 
-    
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1745,59 +2592,61 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-707">line 707</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line498">line 498</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    pkg - The Parsed Package File
+    <p>pkg - The Parsed Package File</p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1806,54 +2655,71 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">object</span>
 
 
-
     </dd>
 </dl>
 
+    </div>
 
-        
 
-    
-        <h5>Example</h5>
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
         
-    <pre class="sunlight-highlight-javascript">// Return Application Server&#x27;s Parsed Package.json file:
-require(&#x27;is-blackrock&#x27;).init()
+    <pre class="prettyprint"><code>// Return Application Server's Parsed Package.json file (calling a dependency):
+require('is-blackrock').init()
   .then(function(core) {
+    const log = core.module('logger).log
     const pkg = core.pkg();
-    console.log(pkg.name);
-    // Output: &quot;Blackrock Application Server&quot;
-  });</pre>
+    log('debug', 'My App > What's in the package? It's a - ' + pkg.name, {}, 'MY_APP_THE_PACKAGE');
+    // Output: "Blackrock Application Server"
+  });</code></pre>
 
+    <pre class="prettyprint"><code>// Return Application Server's Parsed Package.json file (From App Controller)
+const ctrl = function() {};
+ctrl.get = function(req, res) {
+  const log = req,core.module('logger).log
+  const pkg = req.core.pkg();
+  log('debug', 'My App > What's in the package? It's a - ' + pkg.name, {}, 'MY_APP_THEIR_PACKAGE');
+  // Output: "Blackrock Application Server". But take note - you must enable this within the server
+  // config (config['app-engine].allow.pkg = true).
+}</code></pre>
 
-    
-</dd>
+    </div>
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".ready"><span class="type-signature">&lt;static> </span>ready(callbackFn)</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".ready">
+        <a href="#.ready">#</a>
+        <span class="type-signature">(static) </span>ready<span class="signature">(callbackFn)</span><span class="type-signature"> &rarr; {Promise}</span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        Is Server Ready?
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method waits until the server becomes Active and then executes upon a Promise, providing the Core
+Module / Application Server Singleton as the sole parameter within the Promise's Then function. If the server
+is already active it will immediately resolve the promise.</p>
     </div>
-    
 
-    
 
-    
 
-    
-    
-        <h5>Parameters:</h5>
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
         
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -1884,7 +2750,6 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -1892,24 +2757,20 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">Callback Function</td>
+            <td class="description last"><p>Callback Function</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
+    </div>
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1919,59 +2780,61 @@ require(&#x27;is-blackrock&#x27;).init()
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-727">line 727</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line748">line 748</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
             
 <div class="param-desc">
-    promise - A Promise
+    <p>promise - A Promise</p>
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1980,157 +2843,63 @@ require(&#x27;is-blackrock&#x27;).init()
 <span class="param-type">Promise</span>
 
 
-
     </dd>
 </dl>
 
+    </div>
 
-        
 
-    
-        <h5>Example</h5>
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
         
-    <pre class="sunlight-highlight-javascript">// Check if server is ready:
-require(&#x27;is-blackrock&#x27;).init()
+    <pre class="prettyprint"><code>// Check if server is ready (Only required when calling Blackrock as a dependency):
+require('is-blackrock').init()
   .then(function(core) {
     core.ready().then(function(newCore) {
-      console.log(&#x27;Status - &#x27; + newCore.status);
-      // Output: &quot;Active&quot;
+      const log = newCore.module('logger).log
+      log('debug', 'My App > Let's get ready to rumble!!!', {}, 'MY_APP_RUMBLING_ALL_OVER_THE_SHOP');
+      // Output: "My App > Let's get ready to rumble!!!" (In Console)
     });
-  });</pre>
+  });</code></pre>
 
+    </div>
 
-    
-</dd>
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id=".shutdown"><span class="type-signature">&lt;static> </span>shutdown()</h4>
-    
-    
-</dt>
-<dd>
 
     
+
+    <h4 class="name" id=".shutdown">
+        <a href="#.shutdown">#</a>
+        <span class="type-signature">(static) </span>shutdown<span class="signature">(shutdownMsg)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
     <div class="description">
-        This method will shutdown the server. It is always available from a parent application
-(where Blackrock has been included as a dependency). It is only available from a service
-(initialisation method or route handlers) if it is enabled within "services.allow" within
-the server configuration file.
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method will trigger a system shutdown. It is always available from a parent application
+(where Blackrock has been included as a dependency). It is only available from app code
+(initialisation method or route handlers) if it is enabled within within the server configuration file:
+config['app-engine'].allow.shutdown = true</p>
     </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
 
 
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-776">line 776</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">// Shutdown the server:
-require(&#x27;is-blackrock&#x27;).init()
-  .then(function(core) {
-    core.shutdown();
-    // Note: The server will begin shutting down now...
-  });</pre>
 
 
-    
-</dd>
 
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".updateConfig"><span class="type-signature">&lt;static> </span>updateConfig(cfg)</h4>
-    
-    
-</dt>
-<dd>
 
-    
-    <div class="description">
-        Update Server Configuration
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
         
 
-<table class="params table table-striped">
+<table class="params">
     <thead>
     <tr>
         
@@ -2152,14 +2921,13 @@ require(&#x27;is-blackrock&#x27;).init()
 
         <tr>
             
-                <td class="name"><code>cfg</code></td>
+                <td class="name"><code>shutdownMsg</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
-
+<span class="param-type">string</span>
 
 
             
@@ -2169,150 +2937,20 @@ require(&#x27;is-blackrock&#x27;).init()
 
             
 
-            <td class="description last">Configuration Object</td>
+            <td class="description last"><p>Shutdown Message</p></td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-836">line 836</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    result - Result of Configuration Update
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">bool</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-        <h5>Example</h5>
-        
-    <pre class="sunlight-highlight-javascript">// Updates the live configuration of the application server:
-require(&#x27;is-blackrock&#x27;).init()
-  .then(function(core) {
-    const result = core.updateConfig({&#x27;test&#x27;: &#x27;value&#x27;});
-    console.log(result);
-    // Output: true
-  });</pre>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".void"><span class="type-signature">&lt;static> </span>void()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method does not do anything. It exists in order to provide a work-around for when some method must be
-called on the core application server instance, but you do not actually need the method to do anything or to
-return a result.
     </div>
-    
 
-    
 
-    
 
-    
-    
 
-    
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2322,38 +2960,109 @@ return a result.
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="modules_core_main.js.html">modules/core/main.js</a>,
-				 <a href="modules_core_main.js.html#sunlight-1-line-158">line 158</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line800">line 800</a>
+            </li></ul></dd>
+        </div>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>// Shutdown the server:
+require('is-blackrock').init()
+  .then(function(core) {
+    core.shutdown();
+    // Note: The server will begin shutting down now...
+  });</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".void">
+        <a href="#.void">#</a>
+        <span class="type-signature">(static) </span>void<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script><p>This method does not do anything. It exists in order to provide a work-around for when some method must be
+called on the core application server instance, but you do not actually need the method to do anything or to
+return a result.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -2367,9 +3076,58 @@ return a result.
     
 
     
-</dd>
 
-        </dl>
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="modules_core_main.js.html">modules/core/main.js</a>, <a href="modules_core_main.js.html#line208">line 208</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Examples</strong>
+        
+    <pre class="prettyprint"><code>// Voiding (Calling Blackrock As A Dependency):
+require('is-blackrock').init()
+  .then(function(core) {
+    core.void();
+    // Output: Does Nothing. I mean... What did you expect?
+  });</code></pre>
+
+    <pre class="prettyprint"><code>// Voiding (From App Controller):
+const ctrl = function() {};
+ctrl.get = function(req, res) {
+  req.core.void();
+  // Output: Yep. Still does nothing,
+}</code></pre>
+
+    </div>
+
+
+        
     
 
     
@@ -2382,110 +3140,30 @@ return a result.
 
 
 
-		</div>
-	</div>
-
-	<div class="clearfix"></div>
-
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
-	
-
-</div>
 </div>
 
-
-
-<footer>
-
-
-	<span class="copyright">
-	Copyright 2020, Darren Smith
-	</span>
-
-<span class="jsdoc-message">
-	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
-	
-		on 2021 01 27
-	
-	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
-</span>
+<footer id="footer">
+  (c) Copyright, Darren Smith 2021 (<a href="https://www.darrensmith.com.au">www.darrensmith.com.au</a>)
 </footer>
 
-<script src="scripts/docstrap.lib.js"></script>
-<script src="scripts/toc.js"></script>
+<script src="scripts/third-party/prettify.js"></script>
+<script src="scripts/third-party/lang-css.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/third-party/fuse.js"></script>
+<script type="text/javascript" src="scripts/misc.js"></script>
 
-
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/fix-code-block.js"></script>
 <script>
-$( function () {
-	$( "[id*='$']" ).each( function () {
-		var $this = $( this );
-
-		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
-	} );
-
-	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
-		var $this = $( this );
-
-		var example = $this.find( "code" );
-		exampleText = example.html();
-		var lang = /{@lang (.*?)}/.exec( exampleText );
-		if ( lang && lang[1] ) {
-			exampleText = exampleText.replace( lang[0], "" );
-			example.html( exampleText );
-			lang = lang[1];
-		} else {
-			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
-			lang = langClassMatch ? langClassMatch[1] : "javascript";
-		}
-
-		if ( lang ) {
-
-			$this
-			.addClass( "sunlight-highlight-" + lang )
-			.addClass( "linenums" )
-			.html( example.html() );
-
-		}
-	} );
-
-	Sunlight.highlightAll( {
-		lineNumbers : true,
-		showMenu : true,
-		enableDoclinks : true
-	} );
-
-	$.catchAnchorLinks( {
-        navbarOffset: 10
-	} );
-	$( "#toc" ).toc( {
-		anchorName  : function ( i, heading, prefix ) {
-			return $( heading ).attr( "id" ) || ( prefix + i );
-		},
-		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
-		showAndHide : false,
-		smoothScrolling: true
-	} );
-
-	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
-	$( '.dropdown-toggle' ).dropdown();
-
-    $( "table" ).each( function () {
-      var $this = $( this );
-      $this.addClass('table');
-    } );
-
-} );
+  var list = [{"title":"advanced-routing","link":"advanced-routing"},{"title":"app-filesystem-structure","link":"app-filesystem-structure"},{"title":"getting-started","link":"getting-started"},{"title":"server-configuration","link":"server-configuration"},{"title":"Axon","link":"<a href=\"Server.Interfaces.Axon.html\">Axon</a>"},{"title":"HTTP","link":"<a href=\"Server.Interfaces.HTTP.html\">HTTP</a>"},{"title":"Client","link":"<a href=\"Server.Interfaces.HTTP.Client.html\">Client</a>"},{"title":"Server.Interfaces.HTTP.Client.delete","link":"<a href=\"Server.Interfaces.HTTP.Client.html#.delete\">Server.Interfaces.HTTP.Client.delete &rtrif; undefined</a>"},{"title":"Server.Interfaces.HTTP.Client.get","link":"<a href=\"Server.Interfaces.HTTP.Client.html#.get\">Server.Interfaces.HTTP.Client.get &rtrif; undefined</a>"},{"title":"Server.Interfaces.HTTP.Client.post","link":"<a href=\"Server.Interfaces.HTTP.Client.html#.post\">Server.Interfaces.HTTP.Client.post &rtrif; undefined</a>"},{"title":"Server.Interfaces.HTTP.Client.put","link":"<a href=\"Server.Interfaces.HTTP.Client.html#.put\">Server.Interfaces.HTTP.Client.put &rtrif; undefined</a>"},{"title":"Server.Interfaces.HTTP.Client.request","link":"<a href=\"Server.Interfaces.HTTP.Client.html#.request\">Server.Interfaces.HTTP.Client.request &rtrif; undefined</a>"},{"title":"Hook","link":"<a href=\"Server.Interfaces.HTTP.Hook.html\">Hook</a>"},{"title":"Server.Interfaces.HTTP.Hook.add","link":"<a href=\"Server.Interfaces.HTTP.Hook.html#.add\">Server.Interfaces.HTTP.Hook.add &rtrif; undefined</a>"},{"title":"Server.Interfaces.HTTP.Hook.remove","link":"<a href=\"Server.Interfaces.HTTP.Hook.html#.remove\">Server.Interfaces.HTTP.Hook.remove &rtrif; undefined</a>"},{"title":"NanoMSG","link":"<a href=\"Server.Interfaces.NanoMSG.html\">NanoMSG</a>"},{"title":"SSH","link":"<a href=\"Server.Interfaces.SSH.html\">SSH</a>"},{"title":"WebSockets","link":"<a href=\"Server.Interfaces.WebSockets.html\">WebSockets</a>"},{"title":"ZeroMQ","link":"<a href=\"Server.Interfaces.ZeroMQ.html\">ZeroMQ</a>"},{"title":"AppEngine","link":"<a href=\"Server.Modules.AppEngine.html\">AppEngine</a>"},{"title":"Server.Modules.AppEngine.appStats","link":"<a href=\"Server.Modules.AppEngine.html#.appStats\">Server.Modules.AppEngine.appStats &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.list","link":"<a href=\"Server.Modules.AppEngine.html#.list\">Server.Modules.AppEngine.list &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.load","link":"<a href=\"Server.Modules.AppEngine.html#.load\">Server.Modules.AppEngine.load &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.reloadApp","link":"<a href=\"Server.Modules.AppEngine.html#.reloadApp\">Server.Modules.AppEngine.reloadApp &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.search","link":"<a href=\"Server.Modules.AppEngine.html#.search\">Server.Modules.AppEngine.search &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.unloadApp","link":"<a href=\"Server.Modules.AppEngine.html#.unloadApp\">Server.Modules.AppEngine.unloadApp &rtrif; undefined</a>"},{"title":"app","link":"<a href=\"Server.Modules.AppEngine.app.html\">app</a>"},{"title":"Server.Modules.AppEngine.app.cfg","link":"<a href=\"Server.Modules.AppEngine.app.html#.cfg\">Server.Modules.AppEngine.app.cfg &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.loadController","link":"<a href=\"Server.Modules.AppEngine.app.html#.loadController\">Server.Modules.AppEngine.app.loadController &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.routes","link":"<a href=\"Server.Modules.AppEngine.app.html#.routes\">Server.Modules.AppEngine.app.routes &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.unloadController","link":"<a href=\"Server.Modules.AppEngine.app.html#.unloadController\">Server.Modules.AppEngine.app.unloadController &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.use","link":"<a href=\"Server.Modules.AppEngine.app.html#.use\">Server.Modules.AppEngine.app.use &rtrif; undefined</a>"},{"title":"models","link":"<a href=\"Server.Modules.AppEngine.app.models.html\">models</a>"},{"title":"Server.Modules.AppEngine.app.models.add","link":"<a href=\"Server.Modules.AppEngine.app.models.html#.add\">Server.Modules.AppEngine.app.models.add &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.models.get","link":"<a href=\"Server.Modules.AppEngine.app.models.html#.get\">Server.Modules.AppEngine.app.models.get &rtrif; undefined</a>"},{"title":"url","link":"<a href=\"Server.Modules.AppEngine.app.url.html\">url</a>"},{"title":"Server.Modules.AppEngine.app.url.get","link":"<a href=\"Server.Modules.AppEngine.app.url.html#.get\">Server.Modules.AppEngine.app.url.get &rtrif; undefined</a>"},{"title":"vars","link":"<a href=\"Server.Modules.AppEngine.app.vars.html\">vars</a>"},{"title":"Server.Modules.AppEngine.app.vars.get","link":"<a href=\"Server.Modules.AppEngine.app.vars.html#.get\">Server.Modules.AppEngine.app.vars.get &rtrif; undefined</a>"},{"title":"Server.Modules.AppEngine.app.vars.set","link":"<a href=\"Server.Modules.AppEngine.app.vars.html#.set\">Server.Modules.AppEngine.app.vars.set &rtrif; undefined</a>"},{"title":"CLI","link":"<a href=\"Server.Modules.CLI.html\">CLI</a>"},{"title":"Server.Modules.CLI.register","link":"<a href=\"Server.Modules.CLI.html#.register\">Server.Modules.CLI.register &rtrif; undefined</a>"},{"title":"Configure","link":"<a href=\"Server.Modules.Configure.html\">Configure</a>"},{"title":"Core","link":"<a href=\"Server.Modules.Core.html\">Core</a>"},{"title":"Server.Modules.Core.cfg","link":"<a href=\"Server.Modules.Core.html#.cfg\">Server.Modules.Core.cfg &rtrif; undefined</a>"},{"title":"Server.Modules.Core.fetchBasePath","link":"<a href=\"Server.Modules.Core.html#.fetchBasePath\">Server.Modules.Core.fetchBasePath &rtrif; undefined</a>"},{"title":"Server.Modules.Core.getCoreProxy","link":"<a href=\"Server.Modules.Core.html#.getCoreProxy\">Server.Modules.Core.getCoreProxy &rtrif; undefined</a>"},{"title":"Server.Modules.Core.init","link":"<a href=\"Server.Modules.Core.html#.init\">Server.Modules.Core.init &rtrif; undefined</a>"},{"title":"Server.Modules.Core.module","link":"<a href=\"Server.Modules.Core.html#.module\">Server.Modules.Core.module &rtrif; undefined</a>"},{"title":"Server.Modules.Core.pkg","link":"<a href=\"Server.Modules.Core.html#.pkg\">Server.Modules.Core.pkg &rtrif; undefined</a>"},{"title":"Server.Modules.Core.ready","link":"<a href=\"Server.Modules.Core.html#.ready\">Server.Modules.Core.ready &rtrif; undefined</a>"},{"title":"Server.Modules.Core.shutdown","link":"<a href=\"Server.Modules.Core.html#.shutdown\">Server.Modules.Core.shutdown &rtrif; undefined</a>"},{"title":"Server.Modules.Core.void","link":"<a href=\"Server.Modules.Core.html#.void\">Server.Modules.Core.void &rtrif; undefined</a>"},{"title":"Base","link":"<a href=\"Server.Modules.Core.Base.html\">Base</a>"},{"title":"CoreProxy","link":"<a href=\"Server.Modules.Core.CoreProxy.html\">CoreProxy</a>"},{"title":"Server.Modules.Core.CoreProxy.cfg","link":"<a href=\"Server.Modules.Core.CoreProxy.html#.cfg\">Server.Modules.Core.CoreProxy.cfg &rtrif; undefined</a>"},{"title":"Server.Modules.Core.CoreProxy.fetchBasePath","link":"<a href=\"Server.Modules.Core.CoreProxy.html#.fetchBasePath\">Server.Modules.Core.CoreProxy.fetchBasePath &rtrif; undefined</a>"},{"title":"Server.Modules.Core.CoreProxy.module","link":"<a href=\"Server.Modules.Core.CoreProxy.html#.module\">Server.Modules.Core.CoreProxy.module &rtrif; undefined</a>"},{"title":"Server.Modules.Core.CoreProxy.pkg","link":"<a href=\"Server.Modules.Core.CoreProxy.html#.pkg\">Server.Modules.Core.CoreProxy.pkg &rtrif; undefined</a>"},{"title":"Server.Modules.Core.CoreProxy.shutdown","link":"<a href=\"Server.Modules.Core.CoreProxy.html#.shutdown\">Server.Modules.Core.CoreProxy.shutdown &rtrif; undefined</a>"},{"title":"Interface","link":"<a href=\"Server.Modules.Core.Interface.html\">Interface</a>"},{"title":"Server.Modules.Core.Interface.get","link":"<a href=\"Server.Modules.Core.Interface.html#.get\">Server.Modules.Core.Interface.get &rtrif; undefined</a>"},{"title":"Server.Modules.Core.Interface.list","link":"<a href=\"Server.Modules.Core.Interface.html#.list\">Server.Modules.Core.Interface.list &rtrif; undefined</a>"},{"title":"Module","link":"<a href=\"Server.Modules.Core.Module.html\">Module</a>"},{"title":"Daemon","link":"<a href=\"Server.Modules.Daemon.html\">Daemon</a>"},{"title":"DataAccess","link":"<a href=\"Server.Modules.DataAccess.html\">DataAccess</a>"},{"title":"ErrorHandler","link":"<a href=\"Server.Modules.ErrorHandler.html\">ErrorHandler</a>"},{"title":"Farm","link":"<a href=\"Server.Modules.Farm.html\">Farm</a>"},{"title":"Server.Modules.Farm.get","link":"<a href=\"Server.Modules.Farm.html#.get\">Server.Modules.Farm.get &rtrif; undefined</a>"},{"title":"Server.Modules.Farm.isJobServer","link":"<a href=\"Server.Modules.Farm.html#.isJobServer\">Server.Modules.Farm.isJobServer &rtrif; undefined</a>"},{"title":"Server.Modules.Farm.set","link":"<a href=\"Server.Modules.Farm.html#.set\">Server.Modules.Farm.set &rtrif; undefined</a>"},{"title":"Server.Modules.Farm.updateListener","link":"<a href=\"Server.Modules.Farm.html#.updateListener\">Server.Modules.Farm.updateListener &rtrif; undefined</a>"},{"title":"Generator","link":"<a href=\"Server.Modules.Generator.html\">Generator</a>"},{"title":"i18n","link":"<a href=\"Server.Modules.i18n.html\">i18n</a>"},{"title":"Server.Modules.i18n.addResource","link":"<a href=\"Server.Modules.i18n.html#.addResource\">Server.Modules.i18n.addResource &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.addResourceBundle","link":"<a href=\"Server.Modules.i18n.html#.addResourceBundle\">Server.Modules.i18n.addResourceBundle &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.addResources","link":"<a href=\"Server.Modules.i18n.html#.addResources\">Server.Modules.i18n.addResources &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.changeLanguage","link":"<a href=\"Server.Modules.i18n.html#.changeLanguage\">Server.Modules.i18n.changeLanguage &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.cloneInstance","link":"<a href=\"Server.Modules.i18n.html#.cloneInstance\">Server.Modules.i18n.cloneInstance &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.createAppInstances","link":"<a href=\"Server.Modules.i18n.html#.createAppInstances\">Server.Modules.i18n.createAppInstances &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.createInstance","link":"<a href=\"Server.Modules.i18n.html#.createInstance\">Server.Modules.i18n.createInstance &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.dir","link":"<a href=\"Server.Modules.i18n.html#.dir\">Server.Modules.i18n.dir &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.exists","link":"<a href=\"Server.Modules.i18n.html#.exists\">Server.Modules.i18n.exists &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.format","link":"<a href=\"Server.Modules.i18n.html#.format\">Server.Modules.i18n.format &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.getDataByLanguage","link":"<a href=\"Server.Modules.i18n.html#.getDataByLanguage\">Server.Modules.i18n.getDataByLanguage &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.getFixedT","link":"<a href=\"Server.Modules.i18n.html#.getFixedT\">Server.Modules.i18n.getFixedT &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.getResource","link":"<a href=\"Server.Modules.i18n.html#.getResource\">Server.Modules.i18n.getResource &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.getResourceBundle","link":"<a href=\"Server.Modules.i18n.html#.getResourceBundle\">Server.Modules.i18n.getResourceBundle &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.hasResourceBundle","link":"<a href=\"Server.Modules.i18n.html#.hasResourceBundle\">Server.Modules.i18n.hasResourceBundle &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.init","link":"<a href=\"Server.Modules.i18n.html#.init\">Server.Modules.i18n.init &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.loadLanguages","link":"<a href=\"Server.Modules.i18n.html#.loadLanguages\">Server.Modules.i18n.loadLanguages &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.loadNamespaces","link":"<a href=\"Server.Modules.i18n.html#.loadNamespaces\">Server.Modules.i18n.loadNamespaces &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.off","link":"<a href=\"Server.Modules.i18n.html#.off\">Server.Modules.i18n.off &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.on","link":"<a href=\"Server.Modules.i18n.html#.on\">Server.Modules.i18n.on &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.reloadResources","link":"<a href=\"Server.Modules.i18n.html#.reloadResources\">Server.Modules.i18n.reloadResources &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.removeResourceBundle","link":"<a href=\"Server.Modules.i18n.html#.removeResourceBundle\">Server.Modules.i18n.removeResourceBundle &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.setDefaultNamespace","link":"<a href=\"Server.Modules.i18n.html#.setDefaultNamespace\">Server.Modules.i18n.setDefaultNamespace &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.t","link":"<a href=\"Server.Modules.i18n.html#.t\">Server.Modules.i18n.t &rtrif; undefined</a>"},{"title":"Server.Modules.i18n.use","link":"<a href=\"Server.Modules.i18n.html#.use\">Server.Modules.i18n.use &rtrif; undefined</a>"},{"title":"Installer","link":"<a href=\"Server.Modules.Installer.html\">Installer</a>"},{"title":"Server.Modules.Installer.details","link":"<a href=\"Server.Modules.Installer.html#.details\">Server.Modules.Installer.details &rtrif; undefined</a>"},{"title":"Server.Modules.Installer.download","link":"<a href=\"Server.Modules.Installer.html#.download\">Server.Modules.Installer.download &rtrif; undefined</a>"},{"title":"Server.Modules.Installer.install","link":"<a href=\"Server.Modules.Installer.html#.install\">Server.Modules.Installer.install &rtrif; undefined</a>"},{"title":"Server.Modules.Installer.list","link":"<a href=\"Server.Modules.Installer.html#.list\">Server.Modules.Installer.list &rtrif; undefined</a>"},{"title":"Server.Modules.Installer.remove","link":"<a href=\"Server.Modules.Installer.html#.remove\">Server.Modules.Installer.remove &rtrif; undefined</a>"},{"title":"Server.Modules.Installer.switchRegistry","link":"<a href=\"Server.Modules.Installer.html#.switchRegistry\">Server.Modules.Installer.switchRegistry &rtrif; undefined</a>"},{"title":"Jobs","link":"<a href=\"Server.Modules.Jobs.html\">Jobs</a>"},{"title":"Server.Modules.Jobs.add","link":"<a href=\"Server.Modules.Jobs.html#.add\">Server.Modules.Jobs.add &rtrif; undefined</a>"},{"title":"Server.Modules.Jobs.remove","link":"<a href=\"Server.Modules.Jobs.html#.remove\">Server.Modules.Jobs.remove &rtrif; undefined</a>"},{"title":"Logger","link":"<a href=\"Server.Modules.Logger.html\">Logger</a>"},{"title":"Server.Modules.Logger.getLatestHeartbeat","link":"<a href=\"Server.Modules.Logger.html#.getLatestHeartbeat\">Server.Modules.Logger.getLatestHeartbeat &rtrif; undefined</a>"},{"title":"Server.Modules.Logger.log","link":"<a href=\"Server.Modules.Logger.html#.log\">Server.Modules.Logger.log &rtrif; undefined</a>"},{"title":"Router","link":"<a href=\"Server.Modules.Router.html\">Router</a>"},{"title":"Server.Modules.Router.count","link":"<a href=\"Server.Modules.Router.html#.count\">Server.Modules.Router.count &rtrif; undefined</a>"},{"title":"Server.Modules.Router.get","link":"<a href=\"Server.Modules.Router.html#.get\">Server.Modules.Router.get &rtrif; undefined</a>"},{"title":"Server.Modules.Router.list","link":"<a href=\"Server.Modules.Router.html#.list\">Server.Modules.Router.list &rtrif; undefined</a>"},{"title":"Server.Modules.Router.new","link":"<a href=\"Server.Modules.Router.html#.new\">Server.Modules.Router.new &rtrif; undefined</a>"},{"title":"router","link":"<a href=\"Server.Modules.Router.router.html\">router</a>"},{"title":"Server.Modules.Router.router.incoming","link":"<a href=\"Server.Modules.Router.router.html#.incoming\">Server.Modules.Router.router.incoming &rtrif; undefined</a>"},{"title":"Server.Modules.Router.router.route","link":"<a href=\"Server.Modules.Router.router.html#.route\">Server.Modules.Router.router.route &rtrif; undefined</a>"},{"title":"Sandbox","link":"<a href=\"Server.Modules.Sandbox.html\">Sandbox</a>"},{"title":"Server.Modules.Sandbox.execute","link":"<a href=\"Server.Modules.Sandbox.html#.execute\">Server.Modules.Sandbox.execute &rtrif; undefined</a>"},{"title":"Utilities","link":"<a href=\"Server.Modules.Utilities.html\">Utilities</a>"},{"title":"Server.Modules.Utilities.cloneObject","link":"<a href=\"Server.Modules.Utilities.html#.cloneObject\">Server.Modules.Utilities.cloneObject &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.decrypt","link":"<a href=\"Server.Modules.Utilities.html#.decrypt\">Server.Modules.Utilities.decrypt &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.encrypt","link":"<a href=\"Server.Modules.Utilities.html#.encrypt\">Server.Modules.Utilities.encrypt &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getCpuLoad","link":"<a href=\"Server.Modules.Utilities.html#.getCpuLoad\">Server.Modules.Utilities.getCpuLoad &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getCurrentDateInISO","link":"<a href=\"Server.Modules.Utilities.html#.getCurrentDateInISO\">Server.Modules.Utilities.getCurrentDateInISO &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getEndTime","link":"<a href=\"Server.Modules.Utilities.html#.getEndTime\">Server.Modules.Utilities.getEndTime &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getMemoryUse","link":"<a href=\"Server.Modules.Utilities.html#.getMemoryUse\">Server.Modules.Utilities.getMemoryUse &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getObjectMemoryUsage","link":"<a href=\"Server.Modules.Utilities.html#.getObjectMemoryUsage\">Server.Modules.Utilities.getObjectMemoryUsage &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.getStartTime","link":"<a href=\"Server.Modules.Utilities.html#.getStartTime\">Server.Modules.Utilities.getStartTime &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.isJSON","link":"<a href=\"Server.Modules.Utilities.html#.isJSON\">Server.Modules.Utilities.isJSON &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.isNil","link":"<a href=\"Server.Modules.Utilities.html#.isNil\">Server.Modules.Utilities.isNil &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.isNull","link":"<a href=\"Server.Modules.Utilities.html#.isNull\">Server.Modules.Utilities.isNull &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.isUndefined","link":"<a href=\"Server.Modules.Utilities.html#.isUndefined\">Server.Modules.Utilities.isUndefined &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.loadModule","link":"<a href=\"Server.Modules.Utilities.html#.loadModule\">Server.Modules.Utilities.loadModule &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.objectLength","link":"<a href=\"Server.Modules.Utilities.html#.objectLength\">Server.Modules.Utilities.objectLength &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.parseCsv","link":"<a href=\"Server.Modules.Utilities.html#.parseCsv\">Server.Modules.Utilities.parseCsv &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.path","link":"<a href=\"Server.Modules.Utilities.html#.path\">Server.Modules.Utilities.path &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.prop","link":"<a href=\"Server.Modules.Utilities.html#.prop\">Server.Modules.Utilities.prop &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.prop","link":"<a href=\"Server.Modules.Utilities.html#.prop\">Server.Modules.Utilities.prop &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.randomString","link":"<a href=\"Server.Modules.Utilities.html#.randomString\">Server.Modules.Utilities.randomString &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.uuid4","link":"<a href=\"Server.Modules.Utilities.html#.uuid4\">Server.Modules.Utilities.uuid4 &rtrif; undefined</a>"},{"title":"Server.Modules.Utilities.validateString","link":"<a href=\"Server.Modules.Utilities.html#.validateString\">Server.Modules.Utilities.validateString &rtrif; undefined</a>"},{"title":"errorthrown","link":"<a href=\"Server.Modules.ErrorHandler.html#event:errorthrown\">errorthrown</a>"},{"title":"event:errorhandled","link":"<a href=\"Server.Modules.ErrorHandler.html#~event:event:errorhandled\">event:errorhandled</a>"},{"title":"Server","link":"<a href=\"Server.html\">Server</a>"},{"title":"Interfaces","link":"<a href=\"Server.Interfaces.html\">Interfaces</a>"},{"title":"Modules","link":"<a href=\"Server.Modules.html\">Modules</a>"}];
+  var options = 
+  setupSearch(list, options)
 </script>
 
+ 
 
 
-<!--Navigation and Symbol Display-->
-
-
-<!--Google Analytics-->
 
 
 
